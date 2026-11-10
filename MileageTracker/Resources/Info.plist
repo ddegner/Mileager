@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Mileager</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Mileager</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleSpokenName</key>
+	<string>my lee jur</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.daviddegner.MileageTracker</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>mileager</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>CLRequireExplicitServiceSession</key>
+	<true/>
+	<key>CloudKitContainerIdentifier</key>
+	<string>iCloud.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CloudKitSyncAvailable</key>
+	<true/>
+	<key>INAlternativeAppNames</key>
+	<array>
+		<dict>
+			<key>INAlternativeAppName</key>
+			<string>MILEAGER_ALTERNATIVE_APP_NAME_1</string>
+		</dict>
+	</array>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Mileager uses Bluetooth to recognize your car's audio connection and improve automatic trip detection.</string>
+	<key>NSCalendarsFullAccessUsageDescription</key>
+	<string>Mileager can use your calendar events to suggest a purpose for trips you review. Events are processed on this device unless you enable Private Cloud Compute suggestions.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Mileager can match trip locations to your contacts' addresses to improve trip suggestions. Contacts are processed on this device unless you enable Private Cloud Compute suggestions.</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Mileager uses Face ID to unlock the app when App Lock is turned on.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Mileager uses location in the background to automatically record your trips for mileage logs.</string>
+	<key>NSLocationTemporaryUsageDescriptionDictionary</key>
+	<dict>
+		<key>MileageTripCapture</key>
+		<string>Precise location improves mileage distance and route endpoint accuracy.</string>
+	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Mileager uses location to detect and record your trips for mileage logs.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Mileager uses motion activity to tell driving apart from walking and improve automatic trip detection.</string>
+	<key>NSSupportsLiveActivities</key>
+	<true/>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>com.daviddegner.MileageTracker.viewingCurrentDrive</string>
+		<string>com.daviddegner.MileageTracker.viewingTrip</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>NotebookLaunchScreen</string>
+	<key>UILaunchStoryboardName~ipad</key>
+	<string>NotebookTabletLaunchScreen</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+</dict>
+</plist>

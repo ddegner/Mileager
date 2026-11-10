@@ -1,0 +1,325 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "CFBundleDisplayName" : {
+      "comment" : "Bundle display name",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mileager"
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
+    "CFBundleName" : {
+      "comment" : "Bundle name",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Mileager"
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
+    "CFBundleSpokenName" : {
+      "comment" : "Sounds-like pronunciation used by Siri and VoiceOver for the Mileager app name.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "mai li dschör"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "my lee jur"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "mai lí yer"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "maï li djeur"
+          }
+        }
+      }
+    },
+    "MILEAGER_ALTERNATIVE_APP_NAME_1" : {
+      "comment" : "Alternative name users can speak to route Siri requests to Mileager.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fahrtenbuch"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileage Tracker"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Registro de kilometraje"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suivi kilométrique"
+          }
+        }
+      }
+    },
+    "MileageTripCapture" : {
+      "comment" : "Purpose string shown when requesting temporary precise-location accuracy during a drive.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der genaue Standort verbessert die Genauigkeit der Distanz sowie der Start- und Endpunkte der Route."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Precise location improves mileage distance and route endpoint accuracy."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La ubicación precisa mejora la exactitud de la distancia y de los puntos de inicio y fin de la ruta."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La position précise améliore l’exactitude de la distance et des points de départ et d’arrivée du trajet."
+          }
+        }
+      }
+    },
+    "NSBluetoothAlwaysUsageDescription" : {
+      "comment" : "Bluetooth permission prompt: a car audio connection improves automatic trip detection.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager verwendet Bluetooth, um die Audioverbindung Ihres Autos zu erkennen und die automatische Fahrterkennung zu verbessern."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager uses Bluetooth to recognize your car's audio connection and improve automatic trip detection."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager usa Bluetooth para reconocer la conexión de audio de tu coche y mejorar la detección automática de viajes."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager utilise le Bluetooth pour reconnaître la connexion audio de votre voiture et améliorer la détection automatique des trajets."
+          }
+        }
+      }
+    },
+    "NSCalendarsFullAccessUsageDescription" : {
+      "comment" : "Privacy - Calendars Full Access Usage Description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager can use your calendar events to suggest a purpose for trips you review. Events are processed on this device unless you enable Private Cloud Compute suggestions."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager kann Ihre Kalenderereignisse verwenden, um einen Zweck für Fahrten vorzuschlagen. Ereignisse werden auf diesem Gerät verarbeitet, sofern Sie keine Vorschläge mit Private Cloud Compute aktivieren."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager puede usar los eventos de tu calendario para sugerir un propósito para los viajes que revises. Se procesan en este dispositivo salvo que actives sugerencias con Private Cloud Compute."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager peut utiliser les événements de votre calendrier pour suggérer un motif pour les trajets que vous examinez. Ils sont traités sur cet appareil, sauf si vous activez les suggestions avec Private Cloud Compute."
+          }
+        }
+      }
+    },
+    "NSContactsUsageDescription" : {
+      "comment" : "Privacy - Contacts Usage Description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager can match trip locations to your contacts' addresses to improve trip suggestions. Contacts are processed on this device unless you enable Private Cloud Compute suggestions."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager kann Fahrtorte mit den Adressen Ihrer Kontakte abgleichen, um Vorschläge zu verbessern. Kontakte werden auf diesem Gerät verarbeitet, sofern Sie keine Vorschläge mit Private Cloud Compute aktivieren."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager puede comparar los lugares de tus viajes con las direcciones de tus contactos para mejorar las sugerencias. Se procesan en este dispositivo salvo que actives sugerencias con Private Cloud Compute."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager peut comparer les lieux des trajets aux adresses de vos contacts pour améliorer les suggestions. Ils sont traités sur cet appareil, sauf si vous activez les suggestions avec Private Cloud Compute."
+          }
+        }
+      }
+    },
+    "NSFaceIDUsageDescription" : {
+      "comment" : "Face ID permission prompt for the App Lock feature.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager verwendet Face ID, um die App zu entsperren, wenn die App-Sperre aktiviert ist."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager uses Face ID to unlock the app when App Lock is turned on."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager usa Face ID para desbloquear la app cuando el Bloqueo de app está activado."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager utilise Face ID pour déverrouiller l'app lorsque le verrouillage de l'app est activé."
+          }
+        }
+      }
+    },
+    "NSLocationAlwaysAndWhenInUseUsageDescription" : {
+      "comment" : "Always-location permission prompt: background location records trips automatically for mileage logs.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager nutzt den Standort im Hintergrund, um Ihre Fahrten automatisch für das Fahrtenbuch aufzuzeichnen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager uses location in the background to automatically record your trips for mileage logs."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager usa la ubicación en segundo plano para registrar automáticamente tus viajes en el registro de kilometraje."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager utilise la position en arrière-plan pour enregistrer automatiquement vos trajets dans le journal kilométrique."
+          }
+        }
+      }
+    },
+    "NSLocationWhenInUseUsageDescription" : {
+      "comment" : "When-in-use location permission prompt.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager nutzt den Standort, um Ihre Fahrten zu erkennen und für das Fahrtenbuch aufzuzeichnen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager uses location to detect and record your trips for mileage logs."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager usa la ubicación para detectar y registrar tus viajes en el registro de kilometraje."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager utilise la position pour détecter et enregistrer vos trajets dans le journal kilométrique."
+          }
+        }
+      }
+    },
+    "NSMotionUsageDescription" : {
+      "comment" : "Motion permission prompt: motion activity distinguishes driving from walking.",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager nutzt Bewegungsdaten, um Autofahren von Gehen zu unterscheiden und die automatische Fahrterkennung zu verbessern."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager uses motion activity to tell driving apart from walking and improve automatic trip detection."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager usa la actividad de movimiento para distinguir la conducción de la caminata y mejorar la detección automática de viajes."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mileager utilise l'activité physique pour distinguer la conduite de la marche et améliorer la détection automatique des trajets."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

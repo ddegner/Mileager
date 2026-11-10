@@ -1,0 +1,65 @@
+[
+  {
+    "timestamp" : "2026-05-23T12:00:00Z",
+    "latitude" : 40.71280,
+    "longitude" : -74.00600,
+    "horizontalAccuracy" : 12,
+    "speedMetersPerSecond" : 10.5,
+    "courseDegrees" : 10,
+    "motionHint" : "automotive"
+  },
+  {
+    "timestamp" : "2026-05-23T12:01:00Z",
+    "latitude" : 40.71600,
+    "longitude" : -74.00150,
+    "horizontalAccuracy" : 10,
+    "speedMetersPerSecond" : 12.0,
+    "courseDegrees" : 18,
+    "motionHint" : "automotive"
+  },
+  {
+    "timestamp" : "2026-05-23T12:02:30Z",
+    "latitude" : 40.72100,
+    "longitude" : -73.99600,
+    "horizontalAccuracy" : 9,
+    "speedMetersPerSecond" : 13.0,
+    "courseDegrees" : 20,
+    "motionHint" : "automotive"
+  },
+  {
+    "timestamp" : "2026-05-23T12:05:00Z",
+    "latitude" : 40.73000,
+    "longitude" : -73.98600,
+    "horizontalAccuracy" : 14,
+    "speedMetersPerSecond" : 11.0,
+    "courseDegrees" : 25,
+    "motionHint" : "automotive"
+  },
+  {
+    "timestamp" : "2026-05-23T12:08:00Z",
+    "latitude" : 40.74100,
+    "longitude" : -73.97700,
+    "horizontalAccuracy" : 12,
+    "speedMetersPerSecond" : 9.0,
+    "courseDegrees" : 30,
+    "motionHint" : "automotive"
+  },
+  {
+    "timestamp" : "2026-05-23T12:11:00Z",
+    "latitude" : 40.74840,
+    "longitude" : -73.98570,
+    "horizontalAccuracy" : 8,
+    "speedMetersPerSecond" : 0.4,
+    "courseDegrees" : 0,
+    "motionHint" : "stationary"
+  },
+  {
+    "timestamp" : "2026-05-23T12:17:00Z",
+    "latitude" : 40.74842,
+    "longitude" : -73.98571,
+    "horizontalAccuracy" : 8,
+    "speedMetersPerSecond" : 0.2,
+    "courseDegrees" : 0,
+    "motionHint" : "stationary"
+  }
+]

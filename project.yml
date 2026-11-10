@@ -1,0 +1,214 @@
+name: MileageTracker
+options:
+  deploymentTarget:
+    iOS: "26.0"
+settings:
+  base:
+    CURRENT_PROJECT_VERSION: 147
+    MARKETING_VERSION: 2.9
+    SWIFT_VERSION: 6.0
+    # Compiler-driven extraction of SwiftUI/String(localized:) strings into the
+    # String Catalogs; required for Export Localizations to see all strings.
+    SWIFT_EMIT_LOC_STRINGS: YES
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+packages:
+  AppCore:
+    path: AppCorePackage
+targets:
+  MileageTracker:
+    type: application
+    platform: iOS
+    supportedDestinations:
+      - iOS
+    deploymentTarget: "26.0"
+    sources:
+      - MileageTracker/App
+      - MileageTracker/Intents
+      - MileageTracker/Platform
+      - MileageTracker/Search
+      - MileageTracker/Views
+      - MileageTracker/Support
+      - MileageTracker/Resources/AppIcon.icon
+      - MileageTracker/Resources/AutomationInstructions.xcassets
+      - MileageTracker/Resources/PrivacyCover.xcassets
+      - MileageTracker/Resources/NotebookLaunchScreen.storyboard
+      - MileageTracker/Resources/NotebookTabletLaunchScreen.storyboard
+      - MileageTracker/Resources/PrivacyInfo.xcprivacy
+      - MileageTracker/Resources/Localizable.xcstrings
+      - MileageTracker/Resources/InfoPlist.xcstrings
+      - MileageTracker/Resources/AppShortcuts.xcstrings
+      - MileageTracker/Resources/ScreenshotSeeds/AppStoreScreenshotSeeds.json
+    dependencies:
+      - package: AppCore
+        product: AppCore
+      - target: MileageTrackerWidgets
+        embed: true
+    info:
+      path: MileageTracker/Resources/Info.plist
+      properties:
+        CFBundleDevelopmentRegion: "$(DEVELOPMENT_LANGUAGE)"
+        CFBundleExecutable: "$(EXECUTABLE_NAME)"
+        CFBundleIdentifier: "$(PRODUCT_BUNDLE_IDENTIFIER)"
+        CFBundleDisplayName: Mileager
+        CFBundleInfoDictionaryVersion: "6.0"
+        CFBundleName: Mileager
+        CFBundleSpokenName: my lee jur
+        INAlternativeAppNames:
+          - INAlternativeAppName: MILEAGER_ALTERNATIVE_APP_NAME_1
+        CFBundlePackageType: APPL
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        CloudKitSyncAvailable: true
+        CloudKitContainerIdentifier: iCloud.$(PRODUCT_BUNDLE_IDENTIFIER)
+        CLRequireExplicitServiceSession: true
+        NSSupportsLiveActivities: true
+        NSUserActivityTypes:
+          - com.daviddegner.MileageTracker.viewingCurrentDrive
+          - com.daviddegner.MileageTracker.viewingTrip
+        CFBundleURLTypes:
+          - CFBundleURLName: com.daviddegner.MileageTracker
+            CFBundleURLSchemes:
+              - mileager
+        ITSAppUsesNonExemptEncryption: false
+        NSLocationAlwaysAndWhenInUseUsageDescription: Mileager uses location in the background to automatically record your trips for mileage logs.
+        NSLocationWhenInUseUsageDescription: Mileager uses location to detect and record your trips for mileage logs.
+        NSBluetoothAlwaysUsageDescription: Mileager uses Bluetooth to recognize your car's audio connection and improve automatic trip detection.
+        NSLocationTemporaryUsageDescriptionDictionary:
+          MileageTripCapture: Precise location improves mileage distance and route endpoint accuracy.
+        NSMotionUsageDescription: Mileager uses motion activity to tell driving apart from walking and improve automatic trip detection.
+        NSFaceIDUsageDescription: Mileager uses Face ID to unlock the app when App Lock is turned on.
+        NSCalendarsFullAccessUsageDescription: Mileager can use your calendar events to suggest a purpose for trips you review. Events are processed on this device unless you enable Private Cloud Compute suggestions.
+        NSContactsUsageDescription: Mileager can match trip locations to your contacts' addresses to improve trip suggestions. Contacts are processed on this device unless you enable Private Cloud Compute suggestions.
+        UIBackgroundModes:
+          - location
+          - remote-notification
+        UILaunchStoryboardName: NotebookLaunchScreen
+        UILaunchStoryboardName~ipad: NotebookTabletLaunchScreen
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.daviddegner.MileageTracker
+        INFOPLIST_FILE: MileageTracker/Resources/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: Q26G342EEL
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: YES
+        SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD: NO
+        TARGETED_DEVICE_FAMILY: "1,2"
+      configs:
+        Debug:
+          APS_ENVIRONMENT: development
+          CODE_SIGN_ENTITLEMENTS: MileageTracker/Resources/MileageTracker-Debug.entitlements
+        Release:
+          APS_ENVIRONMENT: production
+          CODE_SIGN_ENTITLEMENTS: MileageTracker/Resources/MileageTracker.entitlements
+    attributes:
+      SystemCapabilities:
+        com.apple.BackgroundModes:
+          enabled: 1
+        com.apple.Push:
+          enabled: 1
+        com.apple.iCloud:
+          enabled: 1
+  MileageTrackerWidgets:
+    type: app-extension
+    platform: iOS
+    supportedDestinations:
+      - iOS
+    deploymentTarget: "26.0"
+    sources:
+      - MileageTrackerWidgets
+    # The widget links only the leaf products: the Live Activity payload and
+    # the domain formatting it renders — not the capture/persistence/reporting
+    # machinery in the AppCore umbrella.
+    dependencies:
+      - package: AppCore
+        product: AppCoreModels
+      - package: AppCore
+        product: MileageActivityAttributes
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.daviddegner.MileageTracker.Widgets
+        INFOPLIST_FILE: MileageTrackerWidgets/Info.plist
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: Q26G342EEL
+        # Must match the app target: a family-1 extension embedded in a
+        # family-1,2 app fails App Store upload validation.
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: NO
+  MileageTrackerTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - MileageTrackerTests
+    dependencies:
+      - target: MileageTracker
+      - package: AppCore
+        product: AppCore
+        # The host already links AppCore; Xcode 27 otherwise embeds duplicate
+        # Core Data entity classes in the test bundle.
+        link: false
+    settings:
+      base:
+        BUNDLE_LOADER: "$(TEST_HOST)"
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.daviddegner.MileageTrackerTests
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/MileageTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MileageTracker"
+        TEST_TARGET_NAME: MileageTracker
+        SWIFT_VERSION: 6.0
+  MileageTrackerUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - MileageTrackerUITests
+      - path: docs/siri-evaluation/held-out-requests.json
+        buildPhase: resources
+    dependencies:
+      - target: MileageTracker
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.daviddegner.MileageTrackerUITests
+        TEST_TARGET_NAME: MileageTracker
+        SWIFT_VERSION: 6.0
+schemes:
+  MileageTracker:
+    build:
+      targets:
+        MileageTracker: all
+        MileageTrackerWidgets: all
+        MileageTrackerTests: [test]
+        MileageTrackerUITests: [test]
+    test:
+      targets:
+        - MileageTrackerTests
+        - MileageTrackerUITests
+  # One-click scheme for capturing the App Store "Live" card (03-live.png) on a
+  # physical device: seeds a recording drive and forces the Live Activity on so
+  # the Lock Screen shot can be taken. Keep this OUT of the main scheme — these
+  # args reset data and fake a drive, which you never want on a normal Run.
+  Mileager Live Capture:
+    build:
+      targets:
+        MileageTracker: all
+        MileageTrackerWidgets: all
+    run:
+      commandLineArguments:
+        "--uitesting": true
+        "--reset-data": true
+        "--reset-preferences": true
+        "--skip-onboarding": true
+        "--seed-current-drive": true
+        "--enable-live-activity-for-screenshots": true
+        "--screenshot-locale=en-US": true

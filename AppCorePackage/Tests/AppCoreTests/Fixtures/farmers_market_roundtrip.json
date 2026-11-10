@@ -1,0 +1,90 @@
+[
+  {
+    "timestamp": "2026-05-31T17:23:00Z",
+    "latitude": 40.000000,
+    "longitude": -73.000000,
+    "horizontalAccuracy": 8,
+    "speedMetersPerSecond": 5,
+    "motionHint": "unknown"
+  },
+  {
+    "timestamp": "2026-05-31T17:24:00Z",
+    "latitude": 40.004505,
+    "longitude": -73.000000,
+    "horizontalAccuracy": 8,
+    "speedMetersPerSecond": 5,
+    "motionHint": "unknown"
+  },
+  {
+    "timestamp": "2026-05-31T17:26:00Z",
+    "latitude": 40.009009,
+    "longitude": -73.000000,
+    "horizontalAccuracy": 8,
+    "speedMetersPerSecond": 5,
+    "motionHint": "walking"
+  },
+  {
+    "timestamp": "2026-05-31T17:30:00Z",
+    "latitude": 40.014414,
+    "longitude": -73.000000,
+    "horizontalAccuracy": 8,
+    "speedMetersPerSecond": 8,
+    "motionHint": "automotive"
+  },
+  {
+    "timestamp": "2026-05-31T17:38:00Z",
+    "latitude": 40.031532,
+    "longitude": -73.000000,
+    "horizontalAccuracy": 8,
+    "speedMetersPerSecond": 10,
+    "motionHint": "automotive"
+  },
+  {
+    "timestamp": "2026-05-31T17:44:00Z",
+    "latitude": 40.031712,
+    "longitude": -73.000000,
+    "horizontalAccuracy": 8,
+    "speedMetersPerSecond": 0,
+    "motionHint": "stationary"
+  },
+  {
+    "timestamp": "2026-05-31T19:13:00Z",
+    "latitude": 40.031532,
+    "longitude": -73.000000,
+    "horizontalAccuracy": 8,
+    "speedMetersPerSecond": 10,
+    "motionHint": "automotive"
+  },
+  {
+    "timestamp": "2026-05-31T19:14:00Z",
+    "latitude": 40.022523,
+    "longitude": -73.000000,
+    "horizontalAccuracy": 8,
+    "speedMetersPerSecond": 10,
+    "motionHint": "automotive"
+  },
+  {
+    "timestamp": "2026-05-31T19:15:30Z",
+    "latitude": 40.013514,
+    "longitude": -73.000000,
+    "horizontalAccuracy": 8,
+    "speedMetersPerSecond": 10,
+    "motionHint": "automotive"
+  },
+  {
+    "timestamp": "2026-05-31T19:18:00Z",
+    "latitude": 40.000000,
+    "longitude": -73.000000,
+    "horizontalAccuracy": 8,
+    "speedMetersPerSecond": 10,
+    "motionHint": "automotive"
+  },
+  {
+    "timestamp": "2026-05-31T19:23:00Z",
+    "latitude": 40.000000,
+    "longitude": -73.000000,
+    "horizontalAccuracy": 8,
+    "speedMetersPerSecond": 0,
+    "motionHint": "stationary"
+  }
+]

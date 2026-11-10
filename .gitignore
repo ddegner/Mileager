@@ -1,0 +1,88 @@
+# macOS and Python tooling
+.DS_Store
+._*
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Swift Package Manager
+.build/
+**/.swiftpm/xcode/package.xcworkspace/
+
+# Xcode
+build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.xcresult/
+*.xcarchive/
+*.xctestrun
+*.dSYM/
+*.dSYM.zip
+*.ipa
+
+# Keep the shared workspace and main scheme. XcodeGen creates the other files.
+/MileageTracker.xcodeproj/xcshareddata/xcschemes/*
+!/MileageTracker.xcodeproj/xcshareddata/xcschemes/MileageTracker.xcscheme
+/MileageTracker.xcodeproj/project.xcworkspace/*
+!/MileageTracker.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+
+# Local credentials and signing material
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.local.xcconfig
+*.p8
+*.p12
+*.pfx
+*.pem
+*.key
+*.mobileprovision
+*.provisionprofile
+
+# Local logs and crash reports
+*.log
+*.ips
+*.crash
+
+# Device captures, trip analysis, and SQLite databases and sidecars
+/analysis/
+/data/
+/device-data/
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+
+# Generated design or release bundles
+/docs/icon-composer-candidates/
+/share-kit/
+
+# Large raw screenshot-instruction video (keep local, too big for GitHub)
+app-store-assets/Shortcuts Instructions Raw.mp4
+
+# Local assistant settings and worktrees
+/.claude/settings.local.json
+/.claude/worktrees/
+/.zcode/
+
+# Internal advisory material belongs outside source control.
+docs/patent-risk-*.md
+docs/*patent-counsel*.md
+.redesign-shots/
+
+# Generated App Store slide bundles (74 MiB+) stay out of history.
+Mileager-App-Store-slides-*.zip
+
+# Unused iPad capture intermediates. Keep the original QA captures locally;
+# only the five rendered 2064x2752 cards in AppStoreSlides/output are uploaded.
+# Card 05 now uses its Settings capture as reproducible source/provenance.
+/AppStoreSlides/source/locale-kit/assets/localized/en-US/ipad-0[2-4]-*.png
+/app-store-assets/screenshots/cards/raw/en-US/ipad/0[2-4]-*.png

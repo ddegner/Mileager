@@ -1,0 +1,78 @@
+name: Release Gate
+
+# The full tier of scripts/validate.sh: everything the `Validate` workflow
+# runs, plus the clean iOS-triple package build, the iPhone functional UI
+# regression suite, and iPad split-shell, Mac selection, search, and onboarding.
+# Screenshot captures and hardware-only Siri/intent checks run separately.
+#
+# Run it before a release: from the Actions tab (`workflow_dispatch`, with the
+# ref to test), or by pushing a `v*` tag. The iPad suites are the only
+# automated cover the Mac's selection model gets, so a change that touches
+# the split shell, DriveListView's selection, or DriveCommands should also
+# dispatch this by hand rather than wait for the release.
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Branch, tag, or SHA to test"
+        required: false
+        default: ""
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-gate-${{ github.event.inputs.ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  full-gate:
+    name: Full Validation Gate
+    runs-on: macos-26
+    timeout-minutes: 120
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.ref || github.ref }}
+          persist-credentials: false
+
+      # Pinned for the same reason validate.yml pins it: different XcodeGen
+      # releases serialize the committed pbxproj differently, and the gate
+      # fails when regeneration changes it.
+      - name: Install XcodeGen 2.46.0
+        run: |
+          curl -fsSL -o /tmp/xcodegen.zip \
+            https://github.com/yonaskolb/XcodeGen/releases/download/2.46.0/xcodegen.zip
+          unzip -q /tmp/xcodegen.zip -d /tmp/xcodegen-dist
+          cd /tmp/xcodegen-dist/xcodegen && sudo ./install.sh
+
+      - name: Show Xcode and simulators
+        run: |
+          xcodebuild -version
+          xcrun simctl list runtimes available
+          xcrun simctl list devices available
+
+      # Each UI phase includes many app launches on a shared runner. Keep its
+      # budget separate from the shorter app-hosted unit-test timeout.
+      - name: Run the full validation tier
+        run: |
+          MILEAGE_DERIVED_DATA="$PWD/build/DerivedData" \
+          MILEAGE_RESULT_BUNDLE="$PWD/build/MileageTrackerValidation.xcresult" \
+          MILEAGE_XCODEBUILD_TEST_TIMEOUT=1800 \
+          MILEAGE_XCODEBUILD_UI_TEST_TIMEOUT=3600 \
+          scripts/validate.sh --full
+
+      - name: Upload result bundles on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-gate-result-bundles
+          path: |
+            build/*.xcresult
+          if-no-files-found: ignore

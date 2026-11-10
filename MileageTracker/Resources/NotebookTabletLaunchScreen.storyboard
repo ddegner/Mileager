@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LaunchScreenViewController">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="LaunchScreenScene">
+            <objects>
+                <viewController id="LaunchScreenViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LaunchScreenView">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="LaunchPaper" translatesAutoresizingMaskIntoConstraints="NO" id="LaunchPaperView">
+                                <rect key="frame" x="0" y="0" width="393" height="852"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" image="LaunchBinding" translatesAutoresizingMaskIntoConstraints="NO" id="LaunchBindingView">
+                                <rect key="frame" x="0" y="0" width="393" height="42"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="LaunchStamp" translatesAutoresizingMaskIntoConstraints="NO" id="LaunchStampView">
+                                <rect key="frame" x="29" y="776" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="StampWidth"/>
+                                    <constraint firstAttribute="height" constant="48" id="StampHeight"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LaunchSafeArea"/>
+                        <color key="backgroundColor" name="NotebookPaper"/>
+                        <constraints>
+                            <constraint firstItem="LaunchPaperView" firstAttribute="top" secondItem="LaunchScreenView" secondAttribute="top" id="PaperTop"/>
+                            <constraint firstItem="LaunchPaperView" firstAttribute="bottom" secondItem="LaunchScreenView" secondAttribute="bottom" id="PaperBottom"/>
+                            <constraint firstItem="LaunchPaperView" firstAttribute="left" secondItem="LaunchScreenView" secondAttribute="left" id="PaperLeft"/>
+                            <constraint firstItem="LaunchPaperView" firstAttribute="right" secondItem="LaunchScreenView" secondAttribute="right" id="PaperRight"/>
+                            <constraint firstItem="LaunchBindingView" firstAttribute="top" secondItem="LaunchScreenView" secondAttribute="top" constant="0" id="BindingTop">
+                                <variation key="heightClass=compact" constant="0"/>
+                            </constraint>
+                            <constraint firstItem="LaunchBindingView" firstAttribute="left" secondItem="LaunchScreenView" secondAttribute="left" id="BindingLeft"/>
+                            <constraint firstItem="LaunchBindingView" firstAttribute="right" secondItem="LaunchScreenView" secondAttribute="right" id="BindingRight"/>
+                            <constraint firstItem="LaunchStampView" firstAttribute="left" secondItem="LaunchScreenView" secondAttribute="left" constant="29" id="StampLeft"/>
+                            <constraint firstItem="LaunchStampView" firstAttribute="bottom" secondItem="LaunchScreenView" secondAttribute="bottom" constant="-28" id="StampBottom"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FirstResponder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="NotebookPaper">
+            <color red="0.90" green="0.84" blue="0.75" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <image name="LaunchPaper" width="256" height="256"/>
+        <image name="LaunchBinding" width="312" height="42"/>
+        <image name="LaunchStamp" width="48" height="48"/>
+    </resources>
+</document>

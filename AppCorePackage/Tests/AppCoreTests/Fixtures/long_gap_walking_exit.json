@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": "2026-05-31T18:00:00Z",
+    "latitude": 40.000000,
+    "longitude": -73.000000,
+    "horizontalAccuracy": 8,
+    "speedMetersPerSecond": 12,
+    "motionHint": "automotive"
+  },
+  {
+    "timestamp": "2026-05-31T18:00:50Z",
+    "latitude": 40.009009,
+    "longitude": -73.000000,
+    "horizontalAccuracy": 8,
+    "speedMetersPerSecond": 12,
+    "motionHint": "automotive"
+  },
+  {
+    "timestamp": "2026-05-31T18:05:50Z",
+    "latitude": 40.011351,
+    "longitude": -73.000000,
+    "horizontalAccuracy": 8,
+    "speedMetersPerSecond": 1.2,
+    "motionHint": "walking"
+  }
+]

@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "language": "en-US",
+  "frozen_at": "2026-09-18",
+  "cases": [
+    {
+      "id": "H01",
+      "family": "current-business",
+      "utterance": "Mileager, this journey is for work.",
+      "expected_target": "current",
+      "expected_category": "business",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H02",
+      "family": "current-business",
+      "utterance": "In Mileager, count the drive I am making now as a business trip.",
+      "expected_target": "current",
+      "expected_category": "business",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H03",
+      "family": "current-business",
+      "utterance": "Could you put my ongoing trip in the business category in Mileager?",
+      "expected_target": "current",
+      "expected_category": "business",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H04",
+      "family": "current-business",
+      "utterance": "I need this active drive recorded for business in Mileager.",
+      "expected_target": "current",
+      "expected_category": "business",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H05",
+      "family": "current-business",
+      "utterance": "The trip currently recording in Mileager should be business.",
+      "expected_target": "current",
+      "expected_category": "business",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H06",
+      "family": "current-business",
+      "utterance": "For Mileager, switch the drive underway to business.",
+      "expected_target": "current",
+      "expected_category": "business",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H07",
+      "family": "current-business",
+      "utterance": "Please log this journey as work related in Mileager.",
+      "expected_target": "current",
+      "expected_category": "business",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H08",
+      "family": "current-business",
+      "utterance": "Make the trip I am on a business one in Mileager.",
+      "expected_target": "current",
+      "expected_category": "business",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H09",
+      "family": "current-personal",
+      "utterance": "Mileager, this drive is personal.",
+      "expected_target": "current",
+      "expected_category": "personal",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H10",
+      "family": "current-personal",
+      "utterance": "Please change the trip underway in Mileager to personal.",
+      "expected_target": "current",
+      "expected_category": "personal",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H11",
+      "family": "current-personal",
+      "utterance": "The journey being recorded is for personal use, Mileager.",
+      "expected_target": "current",
+      "expected_category": "personal",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H12",
+      "family": "current-personal",
+      "utterance": "In Mileager, I want my active trip categorized as personal.",
+      "expected_target": "current",
+      "expected_category": "personal",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H13",
+      "family": "current-personal",
+      "utterance": "Could you count my drive right now as personal in Mileager?",
+      "expected_target": "current",
+      "expected_category": "personal",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H14",
+      "family": "current-personal",
+      "utterance": "Put this ongoing journey under personal in Mileager.",
+      "expected_target": "current",
+      "expected_category": "personal",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H15",
+      "family": "current-personal",
+      "utterance": "I am driving for myself, so label this trip personal in Mileager.",
+      "expected_target": "current",
+      "expected_category": "personal",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H16",
+      "family": "current-personal",
+      "utterance": "This recording in Mileager belongs in the personal category.",
+      "expected_target": "current",
+      "expected_category": "personal",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H17",
+      "family": "previous-business",
+      "utterance": "Mileager, the journey I just finished was for business.",
+      "expected_target": "previous",
+      "expected_category": "business",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H18",
+      "family": "previous-business",
+      "utterance": "Can you change the most recently completed trip to business in Mileager?",
+      "expected_target": "previous",
+      "expected_category": "business",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H19",
+      "family": "previous-business",
+      "utterance": "In Mileager, count the drive before this one as business.",
+      "expected_target": "previous",
+      "expected_category": "business",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H20",
+      "family": "previous-business",
+      "utterance": "Please record my latest finished drive as a business trip in Mileager.",
+      "expected_target": "previous",
+      "expected_category": "business",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H21",
+      "family": "previous-business",
+      "utterance": "That last completed journey was for work, Mileager.",
+      "expected_target": "previous",
+      "expected_category": "business",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H22",
+      "family": "previous-business",
+      "utterance": "Put my previous trip in the business category in Mileager.",
+      "expected_target": "previous",
+      "expected_category": "business",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H23",
+      "family": "previous-business",
+      "utterance": "I want the most recent finished drive marked business in Mileager.",
+      "expected_target": "previous",
+      "expected_category": "business",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H24",
+      "family": "previous-business",
+      "utterance": "For Mileager, reclassify my last recorded trip as work related.",
+      "expected_target": "previous",
+      "expected_category": "business",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H25",
+      "family": "previous-personal",
+      "utterance": "Mileager, the drive I just completed was personal.",
+      "expected_target": "previous",
+      "expected_category": "personal",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H26",
+      "family": "previous-personal",
+      "utterance": "Set the category of my latest completed journey to personal in Mileager.",
+      "expected_target": "previous",
+      "expected_category": "personal",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H27",
+      "family": "previous-personal",
+      "utterance": "Could you record my previous drive as personal in Mileager?",
+      "expected_target": "previous",
+      "expected_category": "personal",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H28",
+      "family": "previous-personal",
+      "utterance": "That most recent finished trip was for myself, Mileager.",
+      "expected_target": "previous",
+      "expected_category": "personal",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H29",
+      "family": "previous-personal",
+      "utterance": "In Mileager, switch my last completed drive to personal.",
+      "expected_target": "previous",
+      "expected_category": "personal",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H30",
+      "family": "previous-personal",
+      "utterance": "Please put the drive before this one under personal in Mileager.",
+      "expected_target": "previous",
+      "expected_category": "personal",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H31",
+      "family": "previous-personal",
+      "utterance": "I need my latest finished journey categorized as personal in Mileager.",
+      "expected_target": "previous",
+      "expected_category": "personal",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H32",
+      "family": "previous-personal",
+      "utterance": "For Mileager, count the trip I finished most recently as personal.",
+      "expected_target": "previous",
+      "expected_category": "personal",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H33",
+      "family": "current-notADrive",
+      "utterance": "Mileager, this recording is not a drive.",
+      "expected_target": "current",
+      "expected_category": "notADrive",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H34",
+      "family": "current-notADrive",
+      "utterance": "Please flag the active trip as not a drive in Mileager.",
+      "expected_target": "current",
+      "expected_category": "notADrive",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H35",
+      "family": "current-notADrive",
+      "utterance": "The trip recording now in Mileager should be not a drive.",
+      "expected_target": "current",
+      "expected_category": "notADrive",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H36",
+      "family": "current-notADrive",
+      "utterance": "In Mileager, change this ongoing trip to not a drive.",
+      "expected_target": "current",
+      "expected_category": "notADrive",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H37",
+      "family": "previous-notADrive",
+      "utterance": "Mileager, the latest completed trip was not a drive.",
+      "expected_target": "previous",
+      "expected_category": "notADrive",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H38",
+      "family": "previous-notADrive",
+      "utterance": "Please change my previous trip to not a drive in Mileager.",
+      "expected_target": "previous",
+      "expected_category": "notADrive",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H39",
+      "family": "previous-notADrive",
+      "utterance": "The journey just finished should be not a drive in Mileager.",
+      "expected_target": "previous",
+      "expected_category": "notADrive",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "H40",
+      "family": "previous-notADrive",
+      "utterance": "In Mileager, flag my last completed recording as not a drive.",
+      "expected_target": "previous",
+      "expected_category": "notADrive",
+      "expected_handling": "execute",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "C01",
+      "family": "context-and-regression",
+      "utterance": "Change a trip to business in Mileager.",
+      "expected_target": "ambiguous",
+      "expected_category": "business",
+      "expected_handling": "clarify",
+      "setup": "multiple_completed_trips"
+    },
+    {
+      "id": "C02",
+      "family": "context-and-regression",
+      "utterance": "Categorize my drive in Mileager.",
+      "expected_target": "ambiguous",
+      "expected_category": null,
+      "expected_handling": "clarify",
+      "setup": "active_and_completed_trips"
+    },
+    {
+      "id": "C03",
+      "family": "context-and-regression",
+      "utterance": "Mileager, make it personal.",
+      "expected_target": "ambiguous",
+      "expected_category": "personal",
+      "expected_handling": "clarify",
+      "setup": "no_prior_context"
+    },
+    {
+      "id": "C04",
+      "family": "context-and-regression",
+      "utterance": "Mileager, this trip was for work.",
+      "expected_target": "onscreen",
+      "expected_category": "business",
+      "expected_handling": "execute",
+      "setup": "completed_trip_detail_visible"
+    },
+    {
+      "id": "C05",
+      "family": "context-and-regression",
+      "utterance": "Actually, make that trip personal in Mileager.",
+      "expected_target": "previous_context",
+      "expected_category": "personal",
+      "expected_handling": "execute",
+      "setup": "after_successful_business_request"
+    },
+    {
+      "id": "C06",
+      "family": "context-and-regression",
+      "utterance": "Mileager, this ongoing drive is business.",
+      "expected_target": "current",
+      "expected_category": "business",
+      "expected_handling": "fail_without_mutation",
+      "setup": "no_active_drive"
+    },
+    {
+      "id": "C07",
+      "family": "context-and-regression",
+      "utterance": "Mileager, change this active drive to personal.",
+      "expected_target": "stale",
+      "expected_category": "personal",
+      "expected_handling": "fail_without_mutation",
+      "setup": "drive_finished_after_resolution"
+    },
+    {
+      "id": "C08",
+      "family": "context-and-regression",
+      "utterance": "Show me trips to Boston in Mileager.",
+      "expected_target": "search",
+      "expected_category": null,
+      "expected_handling": "open_search",
+      "setup": "completed_trips"
+    },
+    {
+      "id": "C09",
+      "family": "context-and-regression",
+      "utterance": "Open my active trip in Mileager.",
+      "expected_target": "current",
+      "expected_category": null,
+      "expected_handling": "open",
+      "setup": "active_drive"
+    },
+    {
+      "id": "C10",
+      "family": "context-and-regression",
+      "utterance": "Siri, in the Mileager app categorize the current trip as business.",
+      "expected_target": "current",
+      "expected_category": "business",
+      "expected_handling": "execute",
+      "setup": "active_drive"
+    }
+  ]
+}

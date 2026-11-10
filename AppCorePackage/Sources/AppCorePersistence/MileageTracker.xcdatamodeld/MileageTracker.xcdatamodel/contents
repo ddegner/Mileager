@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="24A348" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="TripEntity" representedClassName="TripEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="captureSource" attributeType="String" defaultValueString="automatic"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="startLatitude" optional="YES" attributeType="Double" usesScalarValueType="YES" allowsCloudEncryption="YES"/>
+        <attribute name="startLongitude" optional="YES" attributeType="Double" usesScalarValueType="YES" allowsCloudEncryption="YES"/>
+        <attribute name="endLatitude" optional="YES" attributeType="Double" usesScalarValueType="YES" allowsCloudEncryption="YES"/>
+        <attribute name="endLongitude" optional="YES" attributeType="Double" usesScalarValueType="YES" allowsCloudEncryption="YES"/>
+        <attribute name="startAddress" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="endAddress" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="startAddressComponentsData" optional="YES" attributeType="Binary" allowsCloudEncryption="YES"/>
+        <attribute name="endAddressComponentsData" optional="YES" attributeType="Binary" allowsCloudEncryption="YES"/>
+        <attribute name="distanceMeters" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="durationSeconds" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="routePolyline" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="classificationRaw" optional="YES" attributeType="String"/>
+        <attribute name="classificationSourceRaw" optional="YES" attributeType="String"/>
+        <attribute name="reviewStatusRaw" attributeType="String" defaultValueString="needsReview"/>
+        <attribute name="businessPurpose" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="tollsAmount" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="parkingAmount" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="needsAttention" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="attentionReasonsData" optional="YES" attributeType="Binary"/>
+        <attribute name="manualDistanceOverrideMeters" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="isArchived" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="odometerStart" optional="YES" attributeType="Double" usesScalarValueType="YES" allowsCloudEncryption="YES"/>
+        <attribute name="odometerEnd" optional="YES" attributeType="Double" usesScalarValueType="YES" allowsCloudEncryption="YES"/>
+        <attribute name="lastEditedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="lastEditedDeviceName" optional="YES" attributeType="String"/>
+        <attribute name="legsData" optional="YES" attributeType="Binary" allowsCloudEncryption="YES"/>
+        <attribute name="connectorsData" optional="YES" attributeType="Binary" allowsCloudEncryption="YES"/>
+        <attribute name="startBluetoothHintHashesData" optional="YES" attributeType="Binary"/>
+    </entity>
+    <entity name="RawSampleEntity" representedClassName="RawSampleEntity" syncable="YES">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="tripID" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="latitude" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="longitude" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="horizontalAccuracy" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="speedMetersPerSecond" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="speedAccuracyMetersPerSecond" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="courseDegrees" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="motionHintRaw" attributeType="String" defaultValueString="unknown"/>
+        <attribute name="motionActivityData" optional="YES" attributeType="Binary"/>
+        <attribute name="expiresAt" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="DiagnosticSampleEntity" representedClassName="DiagnosticSampleEntity" syncable="YES">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="monitoringSessionID" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="tripID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="receivedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="sampleTimestamp" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="latitude" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="longitude" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="horizontalAccuracy" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="speedMetersPerSecond" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="speedAccuracyMetersPerSecond" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="courseDegrees" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="motionHintRaw" attributeType="String" defaultValueString="unknown"/>
+        <attribute name="motionActivityData" optional="YES" attributeType="Binary"/>
+        <attribute name="trackingPhaseRaw" attributeType="String" defaultValueString="unknown"/>
+        <attribute name="powerConnected" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="recentPowerConnected" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="recentPowerDisconnected" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="trustedBluetoothVehicleHint" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="acceptedForDetection" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="detectionOutputRaw" optional="YES" attributeType="String"/>
+        <attribute name="detectionReason" optional="YES" attributeType="String"/>
+        <attribute name="expiresAt" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="DriveCaptureEventEntity" representedClassName="DriveCaptureEventEntity" syncable="YES">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="category" attributeType="String"/>
+        <attribute name="message" attributeType="String"/>
+        <attribute name="monitoringSessionID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="captureID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="tripID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="trackingPhaseRaw" optional="YES" attributeType="String"/>
+        <attribute name="activityLevelRaw" optional="YES" attributeType="String"/>
+        <attribute name="wakeReason" optional="YES" attributeType="String"/>
+        <attribute name="sampleTimestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="staleDelaySeconds" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="powerConnected" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="recentPowerConnected" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="recentPowerDisconnected" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="trustedBluetoothVehicleHint" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="detectionOutputRaw" optional="YES" attributeType="String"/>
+        <attribute name="detectionReason" optional="YES" attributeType="String"/>
+        <attribute name="expiresAt" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="PendingDriveStartSignalEntity" representedClassName="PendingDriveStartSignalEntity" syncable="YES">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="triggerRaw" attributeType="String"/>
+        <attribute name="sourceRaw" attributeType="String"/>
+        <attribute name="confidenceRaw" attributeType="String"/>
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="expiresAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="consumedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="statusRaw" attributeType="String" defaultValueString="pending"/>
+        <attribute name="resultRaw" optional="YES" attributeType="String"/>
+        <attribute name="captureID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="tripID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="ActiveDriveEntity" representedClassName="ActiveDriveEntity" syncable="YES">
+        <attribute name="id" attributeType="String" defaultValueString="current"/>
+        <attribute name="captureID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="pendingTripID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="phaseRaw" attributeType="String" defaultValueString="idle"/>
+        <attribute name="candidateStartedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="startedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="lastMovingAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="firstStationaryAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="stopDueAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="lastProcessedLocationTimestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="sampleCount" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="stateData" attributeType="Binary"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="BluetoothHintEntity" representedClassName="BluetoothHintEntity" syncable="YES">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="identifierHash" attributeType="String"/>
+        <attribute name="displayName" optional="YES" attributeType="String"/>
+        <attribute name="sourceRaw" attributeType="String"/>
+        <attribute name="firstSeenAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="lastSeenAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="correlationCount" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="notADriveCount" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="trusted" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="manualTrustOverride" optional="YES" attributeType="Boolean" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="BluetoothObservationEntity" representedClassName="BluetoothObservationEntity" syncable="YES">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="identifierHash" attributeType="String"/>
+        <attribute name="displayName" optional="YES" attributeType="String"/>
+        <attribute name="sourceRaw" attributeType="String"/>
+        <attribute name="observedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="expiresAt" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="BluetoothMetadataEntity" representedClassName="BluetoothMetadataEntity" syncable="YES">
+        <attribute name="key" attributeType="String"/>
+        <attribute name="value" attributeType="String"/>
+    </entity>
+    <entity name="OdometerCheckpointEntity" representedClassName="OdometerCheckpointEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="odometerMiles" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" allowsCloudEncryption="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="ReportSnapshotEntity" representedClassName="ReportSnapshotEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="csvText" attributeType="String" defaultValueString="" allowsCloudEncryption="YES"/>
+        <attribute name="pdfData" optional="YES" attributeType="Binary" allowsCloudEncryption="YES"/>
+        <attribute name="businessMiles" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="businessValue" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rateCentsPerMile" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="includedTripIDsData" optional="YES" attributeType="Binary"/>
+    </entity>
+    <entity name="TripFeeEntity" representedClassName="TripFeeEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="tripID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="categoryRaw" attributeType="String" defaultValueString="toll"/>
+        <attribute name="amount" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="occurredAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="label" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="sourceRaw" attributeType="String" defaultValueString="manual"/>
+        <attribute name="presetID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="sourceTransactionID" optional="YES" attributeType="String"/>
+        <attribute name="tagOrPlate" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="agency" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="entryPlaza" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="exitPlaza" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="vehicleClass" optional="YES" attributeType="String" allowsCloudEncryption="YES"/>
+        <attribute name="importedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="PreferenceEntity" representedClassName="PreferenceEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="key" optional="YES" attributeType="String"/>
+        <attribute name="valueData" optional="YES" attributeType="Binary"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <configuration name="Cloud">
+        <memberEntity name="TripEntity"/>
+        <memberEntity name="OdometerCheckpointEntity"/>
+        <memberEntity name="ReportSnapshotEntity"/>
+        <memberEntity name="TripFeeEntity"/>
+        <memberEntity name="PreferenceEntity"/>
+    </configuration>
+    <configuration name="Local">
+        <memberEntity name="ActiveDriveEntity"/>
+        <memberEntity name="RawSampleEntity"/>
+        <memberEntity name="DiagnosticSampleEntity"/>
+        <memberEntity name="DriveCaptureEventEntity"/>
+        <memberEntity name="PendingDriveStartSignalEntity"/>
+        <memberEntity name="BluetoothHintEntity"/>
+        <memberEntity name="BluetoothObservationEntity"/>
+        <memberEntity name="BluetoothMetadataEntity"/>
+    </configuration>
+</model>

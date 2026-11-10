@@ -1,0 +1,690 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Add a fee to my current drive in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Eine Gebühr zu meiner aktuellen Fahrt in ${applicationName} hinzufügen",
+              "${category} zu meiner aktuellen Fahrt in ${applicationName} hinzufügen",
+              "Eine Gebühr zu dieser Fahrt in ${applicationName} hinzufügen",
+              "${category} zu dieser Fahrt in ${applicationName} hinzufügen",
+              "Eine Gebühr zu meiner aktuellen Fahrt in ${applicationName} hinzufügen",
+              "${category} zu dieser Fahrt in ${applicationName} hinzufügen",
+              "Eine Gebühr zu ${drive} in ${applicationName} hinzufügen",
+              "${applicationName}, ${category} zu dieser Fahrt hinzufügen"
+            ]
+          }
+        },
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Add a fee to my current drive in ${applicationName}",
+              "Add ${category} to my current drive in ${applicationName}",
+              "Add a fee to this drive in ${applicationName}",
+              "Add ${category} to this drive in ${applicationName}",
+              "Add a fee to my current trip in ${applicationName}",
+              "Add ${category} to this trip in ${applicationName}",
+              "Add a fee to ${drive} in ${applicationName}",
+              "${applicationName} add ${category} to this drive"
+            ]
+          }
+        },
+        "es" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Añadir un gasto a mi viaje actual en ${applicationName}",
+              "Añadir ${category} a mi viaje actual en ${applicationName}",
+              "Añadir un gasto a este viaje en ${applicationName}",
+              "Añadir ${category} a este viaje en ${applicationName}",
+              "Añadir un gasto a mi viaje actual en ${applicationName}",
+              "Añadir ${category} a este viaje en ${applicationName}",
+              "Añadir un gasto a ${drive} en ${applicationName}",
+              "${applicationName}, añadir ${category} a este viaje"
+            ]
+          }
+        },
+        "fr" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Ajouter des frais à mon trajet en cours dans ${applicationName}",
+              "Ajouter ${category} à mon trajet en cours dans ${applicationName}",
+              "Ajouter des frais à ce trajet dans ${applicationName}",
+              "Ajouter ${category} à ce trajet dans ${applicationName}",
+              "Ajouter des frais à mon trajet en cours dans ${applicationName}",
+              "Ajouter ${category} à ce trajet dans ${applicationName}",
+              "Ajouter des frais à ${drive} dans ${applicationName}",
+              "${applicationName}, ajouter ${category} à ce trajet"
+            ]
+          }
+        }
+      }
+    },
+    "Add a note to my current drive in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Eine Notiz zu meiner aktuellen Fahrt in ${applicationName} hinzufügen",
+              "Meine aktuelle Fahrt in ${applicationName} notieren",
+              "Eine Notiz zu dieser Fahrt in ${applicationName} hinzufügen",
+              "Diese Fahrt in ${applicationName} notieren",
+              "Eine Notiz zu meiner aktuellen Fahrt in ${applicationName} hinzufügen",
+              "Diese Fahrt in ${applicationName} notieren",
+              "Eine Notiz zu ${drive} in ${applicationName} hinzufügen",
+              "${applicationName}, eine Notiz zu dieser Fahrt hinzufügen"
+            ]
+          }
+        },
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Add a note to my current drive in ${applicationName}",
+              "Note my current drive in ${applicationName}",
+              "Add a note to this drive in ${applicationName}",
+              "Note this drive in ${applicationName}",
+              "Add a note to my current trip in ${applicationName}",
+              "Note this trip in ${applicationName}",
+              "Add a note to ${drive} in ${applicationName}",
+              "${applicationName} add a note to this drive"
+            ]
+          }
+        },
+        "es" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Añadir una nota a mi viaje actual en ${applicationName}",
+              "Anotar mi viaje actual en ${applicationName}",
+              "Añadir una nota a este viaje en ${applicationName}",
+              "Anotar este viaje en ${applicationName}",
+              "Añadir una nota a mi viaje actual en ${applicationName}",
+              "Anotar este viaje en ${applicationName}",
+              "Añadir una nota a ${drive} en ${applicationName}",
+              "${applicationName}, añadir una nota a este viaje"
+            ]
+          }
+        },
+        "fr" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Ajouter une note à mon trajet en cours dans ${applicationName}",
+              "Noter mon trajet en cours dans ${applicationName}",
+              "Ajouter une note à ce trajet dans ${applicationName}",
+              "Noter ce trajet dans ${applicationName}",
+              "Ajouter une note à mon trajet en cours dans ${applicationName}",
+              "Noter ce trajet dans ${applicationName}",
+              "Ajouter une note à ${drive} dans ${applicationName}",
+              "${applicationName}, ajouter une note à ce trajet"
+            ]
+          }
+        }
+      }
+    },
+    "Business miles for ${month} in ${applicationName}" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geschäftskilometer für ${month} in ${applicationName}"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kilometraje de trabajo de ${month} en ${applicationName}"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kilométrage professionnel de ${month} dans ${applicationName}"
+          }
+        }
+      }
+    },
+    "Check for a drive after ${trigger} in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Check for a drive after ${trigger} in ${applicationName}",
+              "${trigger} connected in ${applicationName}"
+            ]
+          }
+        },
+        "de" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Nach ${trigger} in ${applicationName} nach einer Fahrt suchen",
+              "${trigger} in ${applicationName} verbunden"
+            ]
+          }
+        },
+        "es" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Comprobar si hay un viaje después de ${trigger} en ${applicationName}",
+              "${trigger} conectado en ${applicationName}"
+            ]
+          }
+        },
+        "fr" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Rechercher un trajet après ${trigger} dans ${applicationName}",
+              "${trigger} connecté dans ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "Classify my current drive in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Meine aktuelle Fahrt in ${applicationName} klassifizieren",
+              "Meine aktuelle Fahrt in ${applicationName} als ${classification} markieren",
+              "Diese Fahrt in ${applicationName} klassifizieren",
+              "Diese Fahrt in ${applicationName} als ${classification} markieren",
+              "Meine aktuelle Fahrt in ${applicationName} klassifizieren",
+              "Diese Fahrt in ${applicationName} als ${classification} markieren",
+              "${drive} in ${applicationName} klassifizieren",
+              "${applicationName}, diese Fahrt als ${classification} markieren"
+            ]
+          }
+        },
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Classify my current drive in ${applicationName}",
+              "Mark my current drive as ${classification} in ${applicationName}",
+              "Classify this drive in ${applicationName}",
+              "Mark this drive as ${classification} in ${applicationName}",
+              "Classify my current trip in ${applicationName}",
+              "Mark this trip as ${classification} in ${applicationName}",
+              "Classify ${drive} in ${applicationName}",
+              "${applicationName} mark this drive as ${classification}"
+            ]
+          }
+        },
+        "es" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Clasificar mi viaje actual en ${applicationName}",
+              "Marcar mi viaje actual como ${classification} en ${applicationName}",
+              "Clasificar este viaje en ${applicationName}",
+              "Marcar este viaje como ${classification} en ${applicationName}",
+              "Clasificar mi viaje actual en ${applicationName}",
+              "Marcar este viaje como ${classification} en ${applicationName}",
+              "Clasificar ${drive} en ${applicationName}",
+              "${applicationName}, marcar este viaje como ${classification}"
+            ]
+          }
+        },
+        "fr" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Classer mon trajet en cours dans ${applicationName}",
+              "Marquer mon trajet en cours comme ${classification} dans ${applicationName}",
+              "Classer ce trajet dans ${applicationName}",
+              "Marquer ce trajet comme ${classification} dans ${applicationName}",
+              "Classer mon trajet en cours dans ${applicationName}",
+              "Marquer ce trajet comme ${classification} dans ${applicationName}",
+              "Classer ${drive} dans ${applicationName}",
+              "${applicationName}, marquer ce trajet comme ${classification}"
+            ]
+          }
+        }
+      }
+    },
+    "How many business miles did I drive in ${month} in ${applicationName}" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wie viele Geschäftskilometer bin ich im ${month} in ${applicationName} gefahren"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuántos kilómetros de trabajo conduje en ${month} en ${applicationName}"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Combien de kilomètres professionnels ai-je parcourus en ${month} dans ${applicationName}"
+          }
+        }
+      }
+    },
+    "How long was my last drive in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Wie lange dauerte meine letzte Fahrt in ${applicationName}"
+            ]
+          }
+        },
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "How long was my last drive in ${applicationName}"
+            ]
+          }
+        },
+        "es" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Cuánto duró mi último viaje en ${applicationName}"
+            ]
+          }
+        },
+        "fr" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Combien de temps a duré mon dernier trajet dans ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "Mark my last drive as ${classification} in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Mark my last drive as ${classification} in ${applicationName}",
+              "Mark my previous drive as ${classification} in ${applicationName}",
+              "Mark my latest drive as ${classification} in ${applicationName}",
+              "Mark my most recent drive as ${classification} in ${applicationName}",
+              "Mark my last trip as ${classification} in ${applicationName}",
+              "Mark my previous trip as ${classification} in ${applicationName}",
+              "Mark my latest trip as ${classification} in ${applicationName}",
+              "Mark my most recent trip as ${classification} in ${applicationName}",
+              "Mark the drive I just finished as ${classification} in ${applicationName}",
+              "${applicationName} mark my last drive as ${classification}"
+            ]
+          }
+        },
+        "de" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Meine letzte Fahrt in ${applicationName} als ${classification} markieren",
+              "Meine vorherige Fahrt in ${applicationName} als ${classification} markieren",
+              "Meine neueste Fahrt in ${applicationName} als ${classification} markieren",
+              "Meine zuletzt erfasste Fahrt in ${applicationName} als ${classification} markieren",
+              "Meine letzte Fahrt in ${applicationName} als ${classification} markieren",
+              "Meine vorherige Fahrt in ${applicationName} als ${classification} markieren",
+              "Meine neueste Fahrt in ${applicationName} als ${classification} markieren",
+              "Meine zuletzt erfasste Fahrt in ${applicationName} als ${classification} markieren",
+              "Die gerade beendete Fahrt in ${applicationName} als ${classification} markieren",
+              "${applicationName}, meine letzte Fahrt als ${classification} markieren"
+            ]
+          }
+        },
+        "es" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Marcar mi último viaje como ${classification} en ${applicationName}",
+              "Marcar mi viaje anterior como ${classification} en ${applicationName}",
+              "Marcar mi viaje más reciente como ${classification} en ${applicationName}",
+              "Marcar mi viaje más reciente como ${classification} en ${applicationName}",
+              "Marcar mi último viaje como ${classification} en ${applicationName}",
+              "Marcar mi viaje anterior como ${classification} en ${applicationName}",
+              "Marcar mi viaje más reciente como ${classification} en ${applicationName}",
+              "Marcar mi viaje más reciente como ${classification} en ${applicationName}",
+              "Marcar el viaje que acabo de terminar como ${classification} en ${applicationName}",
+              "${applicationName}, marcar mi último viaje como ${classification}"
+            ]
+          }
+        },
+        "fr" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Marquer mon dernier trajet comme ${classification} dans ${applicationName}",
+              "Marquer mon trajet précédent comme ${classification} dans ${applicationName}",
+              "Marquer mon trajet le plus récent comme ${classification} dans ${applicationName}",
+              "Marquer mon trajet le plus récent comme ${classification} dans ${applicationName}",
+              "Marquer mon dernier trajet comme ${classification} dans ${applicationName}",
+              "Marquer mon trajet précédent comme ${classification} dans ${applicationName}",
+              "Marquer mon trajet le plus récent comme ${classification} dans ${applicationName}",
+              "Marquer mon trajet le plus récent comme ${classification} dans ${applicationName}",
+              "Marquer le trajet que je viens de terminer comme ${classification} dans ${applicationName}",
+              "${applicationName}, marquer mon dernier trajet comme ${classification}"
+            ]
+          }
+        }
+      }
+    },
+    "Open ${applicationName} for my drive" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "${applicationName} für meine Fahrt öffnen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir ${applicationName} para mi viaje"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrir ${applicationName} pour mon trajet"
+          }
+        }
+      }
+    },
+    "Open my ${month} mileage report in ${applicationName}" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffne meinen Fahrtenbericht für ${month} in ${applicationName}"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abre mi informe de kilometraje de ${month} en ${applicationName}"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvre mon rapport de kilométrage de ${month} dans ${applicationName}"
+          }
+        }
+      }
+    },
+    "Open my mileage report in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Meinen Fahrtenbericht in ${applicationName} öffnen",
+              "Meinen Fahrtenbericht für ${month} in ${applicationName} öffnen",
+              "Meinen Bericht für ${month} in ${applicationName} anzeigen"
+            ]
+          }
+        },
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Open my mileage report in ${applicationName}",
+              "Open my ${month} mileage report in ${applicationName}",
+              "Show my ${month} report in ${applicationName}"
+            ]
+          }
+        },
+        "es" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Abrir mi informe de kilometraje en ${applicationName}",
+              "Abrir mi informe de kilometraje de ${month} en ${applicationName}",
+              "Mostrar mi informe de ${month} en ${applicationName}"
+            ]
+          }
+        },
+        "fr" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Ouvrir mon rapport de kilométrage dans ${applicationName}",
+              "Ouvrir mon rapport de kilométrage de ${month} dans ${applicationName}",
+              "Afficher mon rapport de ${month} dans ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "Set current drive purpose in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Zweck der aktuellen Fahrt in ${applicationName} festlegen",
+              "Zweck meiner aktuellen Fahrt in ${applicationName} festlegen",
+              "Zweck dieser Fahrt in ${applicationName} festlegen",
+              "Zweck meiner aktuellen Fahrt in ${applicationName} festlegen",
+              "Zweck dieser Fahrt in ${applicationName} festlegen",
+              "Zweck von ${drive} in ${applicationName} festlegen",
+              "Zweck der aktiven Fahrt in ${applicationName} festlegen",
+              "${applicationName}, Zweck dieser Fahrt festlegen"
+            ]
+          }
+        },
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Set current drive purpose in ${applicationName}",
+              "Set my current drive purpose in ${applicationName}",
+              "Set this drive purpose in ${applicationName}",
+              "Set my current trip purpose in ${applicationName}",
+              "Set this trip purpose in ${applicationName}",
+              "Set purpose for ${drive} in ${applicationName}",
+              "Set active drive purpose in ${applicationName}",
+              "${applicationName} set this drive purpose"
+            ]
+          }
+        },
+        "es" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Establecer el propósito del viaje actual en ${applicationName}",
+              "Establecer el propósito de mi viaje actual en ${applicationName}",
+              "Establecer el propósito de este viaje en ${applicationName}",
+              "Establecer el propósito de mi viaje actual en ${applicationName}",
+              "Establecer el propósito de este viaje en ${applicationName}",
+              "Establecer el propósito de ${drive} en ${applicationName}",
+              "Establecer el propósito del viaje activo en ${applicationName}",
+              "${applicationName}, establecer el propósito de este viaje"
+            ]
+          }
+        },
+        "fr" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Définir le motif du trajet en cours dans ${applicationName}",
+              "Définir le motif de mon trajet en cours dans ${applicationName}",
+              "Définir le motif de ce trajet dans ${applicationName}",
+              "Définir le motif de mon trajet en cours dans ${applicationName}",
+              "Définir le motif de ce trajet dans ${applicationName}",
+              "Définir le motif de ${drive} dans ${applicationName}",
+              "Définir le motif du trajet actif dans ${applicationName}",
+              "${applicationName}, définir le motif de ce trajet"
+            ]
+          }
+        }
+      }
+    },
+    "Show my ${month} report in ${applicationName}" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeige meinen Bericht für ${month} in ${applicationName}"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muestra mi informe de ${month} en ${applicationName}"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Affiche mon rapport de ${month} dans ${applicationName}"
+          }
+        }
+      }
+    },
+    "Start drive in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Fahrt in ${applicationName} starten",
+              "${applicationName} für meine Fahrt öffnen"
+            ]
+          }
+        },
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Start drive in ${applicationName}",
+              "Open ${applicationName} for my drive"
+            ]
+          }
+        },
+        "es" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Iniciar un viaje en ${applicationName}",
+              "Abrir ${applicationName} para mi viaje"
+            ]
+          }
+        },
+        "fr" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Démarrer un trajet dans ${applicationName}",
+              "Ouvrir ${applicationName} pour mon trajet"
+            ]
+          }
+        }
+      }
+    },
+    "What are my business miles in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "de" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Wie viele Geschäftskilometer habe ich in ${applicationName}",
+              "Geschäftskilometer für ${month} in ${applicationName}",
+              "Wie viele Geschäftskilometer hatte ich im ${month} in ${applicationName}",
+              "Wie viele Geschäftskilometer bin ich im ${month} in ${applicationName} gefahren"
+            ]
+          }
+        },
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "What are my business miles in ${applicationName}",
+              "Business miles for ${month} in ${applicationName}",
+              "What were my ${month} business miles in ${applicationName}",
+              "How many business miles did I drive in ${month} in ${applicationName}"
+            ]
+          }
+        },
+        "es" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Cuál es mi kilometraje de trabajo en ${applicationName}",
+              "Kilometraje de trabajo de ${month} en ${applicationName}",
+              "Cuál fue mi kilometraje de trabajo de ${month} en ${applicationName}",
+              "Cuántos kilómetros de trabajo conduje en ${month} en ${applicationName}"
+            ]
+          }
+        },
+        "fr" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Quel est mon kilométrage professionnel dans ${applicationName}",
+              "Kilométrage professionnel de ${month} dans ${applicationName}",
+              "Quel était mon kilométrage professionnel de ${month} dans ${applicationName}",
+              "Combien de kilomètres professionnels ai-je parcourus en ${month} dans ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "What were my ${month} business miles in ${applicationName}" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wie viele Geschäftskilometer hatte ich im ${month} in ${applicationName}"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuál fue mi kilometraje de trabajo de ${month} en ${applicationName}"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quel était mon kilométrage professionnel de ${month} dans ${applicationName}"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
