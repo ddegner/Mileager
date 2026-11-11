@@ -1,6 +1,6 @@
 # Mileager
 
-Local-first mileage tracker for US solo small-business use: automatic capture on
+Local-first, security focused mileage tracker app for US solo small-business use: automatic capture on
 iPhone and iPad, with review, reporting, and export on Apple-silicon Macs.
 
 See [About Mileager](ABOUT.md), [Support](SUPPORT.md), and the
